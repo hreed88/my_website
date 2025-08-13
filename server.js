@@ -1,9 +1,9 @@
-const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const hostname = '0.0.0.0';
+const port = 443;
 
 // MIME types for different file extensions
 const mimeTypes = {
@@ -19,7 +19,7 @@ const mimeTypes = {
     '.ico': 'image/x-icon'
 };
 
-const server = http.createServer((req, res) => {
+const server = https.createServer((req, res) => {
     let filePath = req.url;
     
     // Handle routing for different pages
