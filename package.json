@@ -4,7 +4,7 @@
   "description": "Harrison Reed's personal website with fun landing page and professional about section",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "sudo node server.js",
     "dev": "node server.js"
   },
   "keywords": [

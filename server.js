@@ -20,6 +20,7 @@ const mimeTypes = {
     '.ico': 'image/x-icon'
 };
 
+//get certs
 const options = {
     key: fs.readFileSync('private/private.key.pem'),
     cert: fs.readFileSync('private/domain.cert.pem')
