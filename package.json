@@ -1,0 +1,21 @@
+{
+  "name": "harrison-website",
+  "version": "1.0.0",
+  "description": "Harrison Reed's personal website with fun landing page and professional about section",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "personal-website",
+    "portfolio",
+    "landing-page"
+  ],
+  "author": "Harrison Reed",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
