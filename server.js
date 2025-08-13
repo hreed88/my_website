@@ -1,6 +1,7 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const dns = require('dns');
 
 const hostname = '0.0.0.0';
 const port = 443;
@@ -19,7 +20,12 @@ const mimeTypes = {
     '.ico': 'image/x-icon'
 };
 
-const server = https.createServer((req, res) => {
+const options = {
+    key: fs.readFileSync('private/private.key.pem'),
+    cert: fs.readFileSync('private/domain.cert.pem')
+};
+
+const server = https.createServer(options, (req, res) => {
     let filePath = req.url;
     
     // Handle routing for different pages
