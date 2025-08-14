@@ -6,6 +6,8 @@
     <title>hpreed.dev</title>
     <link rel="stylesheet" href="/pages/landing/landing.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="landing-container">
@@ -23,14 +25,174 @@
             
             <div class="cta-buttons">
                 <a href="/pages/about/about.html" class="cta-btn primary">About Me</a>
-                <a href="#projects" class="cta-btn secondary">Projects</a>
+                <a href="#projects" class="cta-btn secondary scroll-to-projects">Projects</a>
             </div>
         </div>
         
-        <div class="scroll-indicator">
+        <div class="scroll-indicator scroll-to-projects">
             <div class="scroll-arrow"></div>
         </div>
     </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <h2 class="section-title">Featured Project</h2>
+            
+            <!-- Harmony Project -->
+            <div class="project-card harmony-project">
+                <div class="project-header">
+                    <h3 class="project-title">
+                        <i class="fas fa-music"></i>
+                        Harmony
+                    </h3>
+                    <p class="project-tagline">Unifying all of your music streaming services with one interface</p>
+                    <div class="project-status">
+                        <span class="status-badge deprecated">Backend Deprecated</span>
+                        <span class="status-badge">Flutter App</span>
+                    </div>
+                </div>
+
+                <div class="project-overview">
+                    <p>A comprehensive music streaming application that integrates multiple services into a single, unified interface. Built with Flutter and Firebase, featuring real-time synchronization and cross-platform compatibility.</p>
+                </div>
+
+                <!-- Sprint Progress -->
+                <div class="sprint-container">
+                    <h4><i class="fas fa-rocket"></i> Development Sprints</h4>
+                    
+                    <div class="sprint-item">
+                        <div class="sprint-header">
+                            <h5>Sprint 6 - Current</h5>
+                            <span class="sprint-status active">Active</span>
+                        </div>
+                        <ul class="sprint-features">
+                            <li><i class="fab fa-youtube"></i> YouTube connection and import functionality</li>
+                            <li><i class="fas fa-plus-circle"></i> Dropdown buttons for playlist management</li>
+                            <li><i class="fas fa-list-music"></i> Add/remove songs to/from playlists</li>
+                        </ul>
+                        <div class="demo-gifs">
+                            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmtnaDAya2hlcWpjdGM1Y3FrNnA2MzJqb3VueDA2bG54dTdkNWtsNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bLLkLLDJaFwF9qfYBh/giphy.gif" alt="YouTube Integration Demo" class="demo-gif">
+                            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGl3cTV6cTVkZHh2Z2IxOXlkNHRoZnZwNnp5MjdmZGw0ajhncmRiZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jweEVnbu0kTcBRsiuI/giphy.gif" alt="Playlist Management Demo" class="demo-gif">
+                        </div>
+                    </div>
+
+                    <div class="sprint-item">
+                        <div class="sprint-header">
+                            <h5>Sprint 5</h5>
+                            <span class="sprint-status completed">Completed</span>
+                        </div>
+                        <ul class="sprint-features">
+                            <li><i class="fas fa-palette"></i> Figma UI/UX design updates</li>
+                            <li><i class="fas fa-image"></i> Service indicator images for each song</li>
+                            <li><i class="fas fa-cog"></i> Import preferences on account connection</li>
+                            <li><i class="fas fa-play"></i> Bottom bar media player implementation</li>
+                            <li><i class="fas fa-database"></i> Optimized Firebase queries</li>
+                        </ul>
+                    </div>
+
+                    <div class="sprint-item">
+                        <div class="sprint-header">
+                            <h5>Sprint 4</h5>
+                            <span class="sprint-status completed">Completed</span>
+                        </div>
+                        <ul class="sprint-features">
+                            <li><i class="fas fa-cloud-upload-alt"></i> Firebase Functions backend implementation</li>
+                            <li><i class="fas fa-code"></i> Code refactoring for modularity</li>
+                            <li><i class="fab fa-apple"></i> iOS device testing</li>
+                            <li><i class="fas fa-compact-disc"></i> Dynamic player artwork updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="sprint-item">
+                        <div class="sprint-header">
+                            <h5>Sprint 3</h5>
+                            <span class="sprint-status completed">Completed</span>
+                        </div>
+                        <ul class="sprint-features">
+                            <li><i class="fab fa-docker"></i> Docker development environment</li>
+                            <li><i class="fas fa-drafting-compass"></i> Figma design system creation</li>
+                            <li><i class="fas fa-mobile-alt"></i> Flutter UI implementation</li>
+                        </ul>
+                        <div class="figma-link">
+                            <a href="https://www.figma.com/design/n5rjdga4WZAQx89wpn3wYk/Harmony?node-id=0-1&p=f" target="_blank" class="external-link">
+                                <i class="fab fa-figma"></i> View Figma Designs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="tech-stack">
+                    <h4><i class="fas fa-tools"></i> Technology Stack</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag flutter"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="tech-tag firebase"><i class="fas fa-fire"></i> Firebase</span>
+                        <span class="tech-tag docker"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-tag figma"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="tech-tag youtube"><i class="fab fa-youtube"></i> YouTube API</span>
+                        <span class="tech-tag mobile"><i class="fas fa-mobile-alt"></i> Cross-Platform</span>
+                    </div>
+                </div>
+
+                <!-- Database Architecture -->
+                <div class="database-section">
+                    <h4><i class="fas fa-database"></i> Database Architecture</h4>
+                    <div class="db-structure">
+                        <div class="db-item">
+                            <h5><i class="fas fa-list"></i> Playlists</h5>
+                            <p>User-created playlists with metadata and song references</p>
+                        </div>
+                        <div class="db-item">
+                            <h5><i class="fas fa-music"></i> Songs</h5>
+                            <p>Track information with service links and metadata</p>
+                        </div>
+                        <div class="db-item">
+                            <h5><i class="fas fa-users"></i> Users</h5>
+                            <p>User profiles with collections for albums, artists, and playlists</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Setup Instructions -->
+                <div class="setup-section">
+                    <h4><i class="fas fa-wrench"></i> Development Setup</h4>
+                    <div class="setup-steps">
+                        <div class="setup-step">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h5>Install Dependencies</h5>
+                                <p>Flutter SDK, Firebase CLI, and development tools</p>
+                            </div>
+                        </div>
+                        <div class="setup-step">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h5>Firebase Configuration</h5>
+                                <p>Run <code>flutterfire configure</code> with project ID</p>
+                            </div>
+                        </div>
+                        <div class="setup-step">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h5>FlutterFire CLI</h5>
+                                <p>Execute <code>dart pub global activate flutterfire_cli</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-footer">
+                    <a href="/pages/about/about.html" class="cta-btn primary">
+                        <i class="fas fa-user"></i> Learn More About Me
+                    </a>
+                    <a href="#top" class="cta-btn secondary scroll-to-top">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="/pages/landing/landing.js"></script>
 </body>
