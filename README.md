@@ -1,4 +1,4 @@
-# Harrison Reed - Personal Website
+# Harrison Reed - <a href="https://hpreed.dev">Personal Website</a>
 
 A modern, responsive personal website built with Node.js, featuring a fun landing page and a professional about section.
 
@@ -29,3 +29,4 @@ my_website/
         ├── styles.css          # About page styles
         └── main.js             # About page functionality
 ```
+
